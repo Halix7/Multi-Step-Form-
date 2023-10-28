@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* - Mobile: 375px
+- Desktop: 1440px */
+.active{
+  background-color: hsl(206, 94%, 87%);
+  color:hsl(213, 96%, 18%);
+}
+body{
+  background-color: hsl(217, 100%, 97%) ;
+}
+/* primary  */
+.marine-blue{
+  color:hsl(213, 96%, 18%);
+}
+.bg-marine-blue{
+  background-color:hsl(213, 96%, 18%);
+}
+.purplish-blue{
+  color:hsl(243, 100%, 62%);
+}
+.bg-purplish-blue{
+  background-color:hsl(243, 100%, 62%);
+}
+.pastel-blue{
+  color: hsl(228, 100%, 84%);
+}
+.bg-pastel-blue{
+  background-color: hsl(228, 100%, 84%);
+}
+.light-blue{
+  color: hsl(206, 94%, 87%);
+}
+.bg-light-blue{
+  background-color: hsl(206, 94%, 87%);
+}
+.strawberry-red{
+  color:  hsl(354, 84%, 57%);
+}
+.bg-strawberry-red{
+  background-color:  hsl(354, 84%, 57%);
+}
+
+/* neutral */
+
+.cool-gray{
+  color:  hsl(231, 11%, 63%);
+}
+.bg-cool-gray{
+  background-color:  hsl(231, 11%, 63%);
+}
+.light-gray{
+  color: hsl(229, 24%, 87%);
+}
+.bg-light-gray{
+  background-color: hsl(229, 24%, 87%);
+}
+.magnolia{
+ color: hsl(217, 100%, 97%) ;
+}
+.bg-magnolia{
+ background-color: hsl(217, 100%, 97%) ;
+}
+.alabaster{
+  color:  hsl(231, 100%, 99%);
+}
+.bg-alabaster{
+  background-color:  hsl(231, 100%, 99%);
+}
+.white{
+ color: hsl(0, 0%, 100%)
+}
+.ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* //transition  */
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  }
+
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
+}
